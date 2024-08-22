@@ -21,3 +21,4 @@ console.log(newString);
 
 const newStringOne = "kamlesh"   //output kamlesh
 console.log(newStringOne);
+ 
