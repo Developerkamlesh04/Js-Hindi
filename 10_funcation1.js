@@ -15,7 +15,7 @@ function MyName() {
 // MyName()
 
 // function addTwonumbers(number1, number2){    // (number1, number2) its a parameter
-//     console.log(number1 + number2);
+//     console.log(number1 + number2);   //NaN output
     
 // }
 // addTwonumbers(25, 64)  // () Pass the Argument then excute the code
