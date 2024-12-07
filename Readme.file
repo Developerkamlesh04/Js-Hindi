@@ -1,0 +1,15 @@
+#######  JAVAsCRIPT MAIN TOPIC ###########
+
+1) Data-type: number, string, boolean, const, var, let, null, undefined
+
+2) Arithmetic operators: +, -, *, /, %, ++, --, **
+
+3) Array, Function, callback, promises
+
+4) map, filter, find Function
+
+5) destructuring, rest & spread operator
+
+6) import, export, export default
+
+7) Apis, DOM Manipulation, Event Handling, form handling
