@@ -18,9 +18,24 @@
         li.innerText = language;
         document.querySelector(".language").appendChild(li);
     }
-
     addLanguage("Python");
     addLanguage("C++");
+
+    //Same method
+    function addoptmizelanguage(language) {
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(language));
+        document.querySelector(".language").appendChild(li);
+    }
+    addoptmizelanguage("Java");
+
+    //Edit
+    const secondLang = document.querySelector("li: nth-child(2)");
+    const newLi = document.createElement("li");
+    newLi.innerText = "Ruby";
+    secondLang.replaceWith(newLi);
+
+    
 </script>
 
 </html>
