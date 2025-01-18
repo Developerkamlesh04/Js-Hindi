@@ -1,4 +1,4 @@
-function one (){
+ function one (){
     const username = "kamlesh"
 
     function two (){
@@ -25,7 +25,7 @@ if (true){
 
 //console.log(user);  //error
 
-//+++++++++++++interesting+++++++++++++++
+//! +++++++++++++interesting+++++++++++++++
 console.log(addone(5))
 
 function addone(num){

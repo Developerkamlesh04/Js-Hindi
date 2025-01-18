@@ -13,7 +13,7 @@ const user ={
 // user.username = "Aman"
 // user.welcomeMessage()
 
-// console.log(this);
+// console.log(this);  empty
 
 // function phone (){
 //     let username = "Rajan"
@@ -22,7 +22,7 @@ const user ={
 // }
 // phone()
 
-// arrow funcation
+//? arrow funcation
 
 const phone = () =>{
     let username = "rajan"
@@ -32,7 +32,7 @@ const phone = () =>{
 
 // phone()
 
-// const addTwo =(num1, num2) => {
+// const addTwo = (num1, num2) => {
 //     return num1+num2
 // }
 

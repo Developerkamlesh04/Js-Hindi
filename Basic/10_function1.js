@@ -52,6 +52,8 @@ function calculaterCardprice (...num1){    //[...Resto Operator]
 
 // console.log(calculaterCardprice(20, 288, 500));
 
+//! Object Funcation
+
 const User ={
     username: "kamlesh",
     price: 99

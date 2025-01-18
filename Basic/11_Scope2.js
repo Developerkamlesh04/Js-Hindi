@@ -6,9 +6,9 @@
 // console.log(c);
 
 // var c = 300
-let a = 300                    //Globel Scope
+let a = 300                    //*Globel Scope
 
-if (true){               //Block Scope
+if (true){               //*Block Scope
     let a = 10
     const b = 20
     console.log("inner:", a);

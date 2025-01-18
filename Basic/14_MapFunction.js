@@ -13,7 +13,8 @@ We can use the map() method to map over every element in the array to add 10 to 
 
 //! You can use filter() to return only the odd numbers from an array of numbers.
 
-const arr1 = [1, 2, 3, 4, 5];
-const output1 = arr1.filter((num) => num % 2);
-console.log(arr1);
-console.log(output1);
+// const arr1 = [1, 2, 3, 4, 5];
+// const output1 = arr1.filter((num) => num % 2);
+// console.log(arr1);
+// console.log(output1);
+
