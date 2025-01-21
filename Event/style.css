@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+h2 {
+    margin-top: 20px;
+    color: #2c3e50;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Image List Container */
+div {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Image List */
+#images {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual List Items */
+#images li {
+    list-style: none;
+}
+
+/* Images */
+#images img {
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Image Hover Effect */
+#images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Links inside the List */
+#images a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #3498db;
+}
+
+/* Add some margin for mobile responsiveness */
+@media screen and (max-width: 768px) {
+    #images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #images img {
+        width: 90%;
+    }
+}
+
+/* 
+All Learn Event function
+
+type, timestamp, target, defaultPrevented
+toElement, srcElement, currentTarget
+which, pageX, pageY, clientX, clientY
+screenX, screenY
+offsetX, offsetY
+altKey, ctrlKey, metaKey, shiftKey, */

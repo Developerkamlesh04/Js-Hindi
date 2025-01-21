@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #4a90e2, #50c9c3);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.Wrapper {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    width: 90%;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #1d40de;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+}
+
+.form {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.guessField {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px 15px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.guessField:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
+#subt {
+    margin-top: 15px;
+    width: 100%;
+    max-width: 350px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+#subt:hover {
+    background: linear-gradient(135deg, #0056b3, #004494);
+    transform: scale(1.05);
+}
+
+.resultParse {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(0, 123, 255, 0.1);
+    border: 1px solid rgba(0, 123, 255, 0.3);
+    border-radius: 10px;
+}
+
+.resultParse p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #333;
+}
+
+span {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Wrapper {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .guessField {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #subt {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .resultParse p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .guessField {
+        font-size: 13px;
+    }
+
+    #subt {
+        font-size: 13px;
+    }
+
+    .resultParse p {
+        font-size: 13px;
+    }
+}
