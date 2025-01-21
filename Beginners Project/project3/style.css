@@ -1,0 +1,60 @@
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.center {
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#banner {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    padding: 15px 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    backdrop-filter: blur(10px);
+}
+
+#clock {
+    font-size: 56px;
+    font-weight: bold;
+    padding: 20px 40px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #1e3c72;
+    border-radius: 20px;
+    display: inline-block;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    text-shadow: none;
+    letter-spacing: 2px;
+    animation: glow 1.5s infinite ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+    #banner {
+        font-size: 22px;
+        padding: 10px 20px;
+    }
+
+    #clock {
+        font-size: 42px;
+        padding: 15px 30px;
+    }
+}

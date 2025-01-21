@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container Styles */
+.container {
+    width: 90%;
+    /* Responsive width */
+    max-width: 500px;
+    /* Maximum width for larger screens */
+    margin: 50px auto;
+    /* Center the container with spacing */
+    padding: 20px;
+    background-color: #797978;
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    color: #fff;
+    /* White text color */
+    box-sizing: border-box;
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Add spacing between elements */
+}
+
+p {
+    margin: 0;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input Styles */
+input {
+    width: 100%;
+    height: 35px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    /* Full width for responsiveness */
+    height: 40px;
+    background-color: #fff;
+    color: #212121;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #212121;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #212121;
+    color: #fff;
+}
+
+/* Result Section */
+#result {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+    color: #f1f1f1;
+}
+
+/* Weight Guide */
+#weight-guide {
+    background-color: #5c5c5b;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#weight-guide h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+#weight-guide p {
+    margin: 5px 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    label,
+    #weight-guide h3 {
+        font-size: 18px;
+    }
+
+    input {
+        height: 30px;
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    #weight-guide p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    button {
+        font-size: 14px;
+        height: 35px;
+    }
+
+    #result {
+        font-size: 18px;
+    }
+}
