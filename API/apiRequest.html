@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Photo Card</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <img id="profile-img" src="" alt="Profile Image" />
+      <div class="card-content">
+        <h3 id="username">API Photo</h3>
+      </div>
+    </div>
+
+    <script>
+      const requestUrl = "https://api.github.com/users/Developerkamlesh04";
+      const xhr = new XMLHttpRequest();
+      xhr.open("GET", requestUrl);
+
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 ) {
+          const data = JSON.parse(this.responseText);
+          console.log(data);
+
+        
+          document.getElementById("profile-img").src = data.avatar_url;
+          document.getElementById("username").innerText = data.name || "No Name Available";
+        } else if (xhr.readyState === 4) {
+          console.error( xhr.status);
+        }
+      };
+
+      xhr.send();
+    </script>
+  </body>
+</html>
